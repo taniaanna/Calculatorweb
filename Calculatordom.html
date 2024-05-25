@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Pooper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./calcstyle.css">
+</head>
+<body>
+    <h1 class="mt-3" style="text-align: center; color: white;">Calculator</h1>
+    <div class="calc-body">
+        <!-- Calculator Display Screen -->
+        <div class="calc-screen">
+            <div id="calc-typed">
+                <input id="result"  type="text" class="form-control">
+            </div>
+        </div>
+        <!-- Calculator Buttons -->
+        <div class="calc-button-row">
+         <button id="seven" onclick="display('7')">7</button>
+         <button id="eight" onclick="display('8')">8</button>
+         <button id="nine" onclick="display('9')">9</button>
+         <button id="mul" onclick="display('*')" class="opt">&#215</button>
+         <button id="four" onclick="display('4')">4</button>
+         <button id="five" onclick="display('5')">5</button>
+         <button id="six" onclick="display('6')">6</button>
+         <button id="sub" onclick="display('-')" class="opt">&#8722;</button>
+         <button id="one" onclick="display('1')">1</button>
+         <button id="two" onclick="display('2')">2</button>
+         <button id="three" onclick="display('3')">3</button>
+         <button id="add" onclick="display('+')" class="opt">&#43;</button>
+         <button id="ac" onclick="allClear()" class="ac">AC</button>
+         <button id="zero" onclick="display('0')" class="opt">0</button>
+         <button id="div" onclick="display('/')" class="opt">&#247;</button>
+         <button id="equal" onclick="calc()" class="opt">&#61;</button>
+         <button id="del" onclick="del()">&#9003;</button>
+
+        </div>
+    </div>
+</body>
+<!-- link js file -->
+<script src="./calc.js"></script>
+</html>
